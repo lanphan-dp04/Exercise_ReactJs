@@ -1,9 +1,19 @@
-import React from 'react';
+import React from "react";
+import LogoHeader from "./LogoHeader";
+import NavHeader from "./NavHeader";
+import SildeBarHeader from "./SildeBarHeader";
 
-
-function Header() {
+const Header = () => {
   return (
-    <p className='header'>Header</p>
-  )
-}
+    <header>
+      <div className="container container-sm container-md">
+        <div className="header-wrapper row">
+          <LogoHeader />
+          <NavHeader />
+          <SildeBarHeader />
+        </div>
+      </div>
+    </header>
+  );
+};
 export default Header;

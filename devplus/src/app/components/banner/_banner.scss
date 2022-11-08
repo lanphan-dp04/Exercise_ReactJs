@@ -1,0 +1,130 @@
+.banner{
+    background-image: url(../../../../public/Devplus_missions.png);
+    background-position: center;
+    background-size: cover;
+
+    .banner-container{
+        max-width: 1270px;
+        width: 100%;
+        margin: 0 auto;
+        
+        .banner-boxcontent{
+            padding: 125px 0 425px;
+            max-width: 750px;
+            margin: 0 auto;
+            text-align: center;
+
+            .banner-title{
+                color: white;
+                font-size: 55px;
+                margin-bottom: 15px;
+                position: relative;
+                animation-name: MoveUpDown;
+                animation-duration: 2s;
+                animation-timing-function: ease-in;
+            }
+
+            .banner-content{
+                color: #505050;
+                font-size: 20px;
+                line-height: 30px;
+                /* font-weight: 500; */
+                margin-bottom: 50px;
+            }
+
+            .banner-button{
+                border: 1px solid #ff5421;
+                color: #ffffff ;
+                background: #ff5421;
+                padding: 16px 58px;
+                border-radius: 30px;    
+                font-size: 16px;
+                font-weight: 700;
+                margin-top: 50px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .banner-title{
+        font-size: 45px;
+    }
+
+}
+@media only screen and (max-width: 991px){
+    .banner-container{
+        max-width: 720px;
+    }
+    .banner-title{
+        font-size: 40px;
+
+    }
+
+}
+@media only screen and (max-width: 767px){
+    .banner-container{
+        max-width: 540px;
+    }
+    .banner-title{
+        font-size: 35px;
+    }
+
+}
+@media only screen and (max-width: 575px){
+    .banner-title{
+        font-size: 30px;
+
+    }
+
+}
+@media only screen and (max-width: 480px){
+    
+    .banner{
+        background-image: url(../../../../public/Devplus_missions.png);
+        background-position: center;
+        background-size: cover;
+    
+        .banner-container{
+            max-width: 1270px;
+            width: 100%;
+            margin: 0 auto;
+            
+            .banner-boxcontent{
+                padding: 125px 0 425px;
+                max-width: 750px;
+                margin: 0 auto;
+                text-align: center;
+    
+                .banner-title{
+                    color: white;
+                    font-size: 25px;
+                    margin-bottom: 15px;
+                    padding: 0 20px;
+                }
+    
+                .banner-content{
+                    color: #505050;
+                    font-size: 20px;
+                    line-height: 30px;
+                    /* font-weight: 500; */
+                    margin-bottom: 50px;
+                    padding: 0 15px;
+                }
+    
+                .banner-button{
+                    border: 1px solid #ff5421;
+                    color: #ffffff ;
+                    background: #ff5421;
+                    padding: 16px 58px;
+                    border-radius: 30px;    
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-top: 50px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

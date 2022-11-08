@@ -7,20 +7,17 @@ const ImageSlide = (props) => {
   const [count, setCount] = useState();
 
   const handlClickPrev = () => {
-   if(count > 1) {
-    setCount(+count - +1);
-   }
-   else if(+count === +1) {
-    setCount(6);
-   }
-    
+    if (count > 1) {
+      setCount(+count - +1);
+    } else if (+count === +1) {
+      setCount(6);
+    }
   };
   const handlClickNext = () => {
     setCount(+count + +1);
-   if(+count === +6) {
-    setCount(1);
-   }
-    
+    if (+count === +6) {
+      setCount(1);
+    }
   };
 
   const handlClickShow = (id) => {
@@ -51,8 +48,9 @@ const ImageSlide = (props) => {
           }`}
           id="modal-container"
         >
-          <div className="modal-box">
+          <div  className="modal-box">
             <div
+              data-aos="zoom-in-down"
               id="carouselExampleControls"
               className="carousel slide zoomInDown"
             >
@@ -63,9 +61,8 @@ const ImageSlide = (props) => {
               >
                 <i className="fa-solid fa-xmark"></i>
               </button>
-
               <div className="carousel-inner">
-                <ItemModal {...props} setId={count} id={id} />
+                <ItemModal  {...props} setId={count} id={id} />
               </div>
               <button
                 className="carousel-control-prev"
@@ -85,7 +82,9 @@ const ImageSlide = (props) => {
                 type="button"
                 data-bs-target="#carouselExampleControls"
                 data-bs-slide="next"
-                onClick={(e) => {handlClickNext()}}
+                onClick={(e) => {
+                  handlClickNext();
+                }}
               >
                 <span
                   className="carousel-control-next-icon"

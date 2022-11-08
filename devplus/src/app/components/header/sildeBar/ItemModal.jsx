@@ -12,7 +12,7 @@ const ItemModal = (props) => {
   const renderItemModal = imageListModal.map((element) => {
     if (+element.id === +id) {
       return (
-        <div key={element.id} className="carousel-item carousel-item-active">
+        <div  key={element.id} className="carousel-item carousel-item-active">
           <img src={element.src} className="d-block w-100" alt="STunited" />
         </div>
       );

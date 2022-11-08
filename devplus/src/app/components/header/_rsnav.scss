@@ -61,7 +61,12 @@
   }
 }
 @media only screen and (max-width: 992px) {
-  .header-nav {
-    display: block;
+  .header-wrapper {
+    position: relative;
+    .header-nav {
+      position: absolute;
+      top: 90px;
+      display: block;
+    }
   }
 }

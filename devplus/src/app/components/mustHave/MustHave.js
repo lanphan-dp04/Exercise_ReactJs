@@ -6,7 +6,7 @@ function MustHave() {
   const [categories, setCategories] = useState([]);
   const [isLoad, setIsLoad] = useState(true);
 
-  let url = "https://6361ddfc7521369cd05fab83.mockapi.io/api/mustHave";
+  let url = "https://62d16e83d4eb6c69e7dd4ff6.mockapi.io/mustHave";
   async function fetchData() {
     try {
       setIsLoad(true);

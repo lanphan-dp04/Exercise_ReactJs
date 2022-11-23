@@ -1,0 +1,119 @@
+.section-saying {
+  padding: 50px 0;
+  .saying-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .saying-list {
+    padding-left: unset;
+  }
+  .saying-item-wrapper {
+    padding: 0 15px;
+  }
+  .saying-content {
+    background-color: #f3f8f9;
+    position: relative;
+    padding-top: 70px;
+    height: 450px;
+  }
+  .saying-image {
+    position: absolute;
+    margin-top: -20px;
+    width: 66px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .saying-desc {
+    text-align: center;
+    color: #505050;
+    font-size: 23px;
+    line-height: 33px;
+    padding: 80px 40px 30px;
+    font-style: italic;
+  }
+  .saying-author {
+    position: relative;
+  }
+  .author-avatar-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -35px;
+  }
+  .author-info {
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .author-name {
+    font-size: 20px;
+    line-height: 45px;
+    color: #226fb7;
+  }
+  .slick-dots {
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    li {
+      position: unset !important;
+      width: unset !important;
+      button:before {
+        font-size: 0;
+      }
+    }
+    button {
+      font-size: 0;
+      width: 40px;
+      height: 12px;
+      margin: 0 6px;
+      padding: 3px 0;
+      background-color: #dde0e4;
+      border-radius: 30px;
+      transition: all 0.2s linear;
+      border: 1px solid #226fb7;
+      opacity: 0.7;
+      background: transparent;
+      cursor: pointer;
+      background: #226fb7;
+    }
+  }
+  .slick-active {
+    button {
+      opacity: unset;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .section-saying {
+    .saying-content {
+      height: 700px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-saying {
+    .saying-item-wrapper {
+      padding: unset;
+    }
+    .saying-content {
+      height: 480px;
+    }
+    .saying-desc {
+      font-size: 20px;
+      padding: 80px 40px 30px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-saying {
+    .saying-desc {
+      padding: 80px 20px 15px;
+    }
+    .saying-content {
+      height: 530px;
+    }
+  }
+}

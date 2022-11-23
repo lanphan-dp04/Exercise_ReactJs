@@ -28,6 +28,7 @@ const SildeBarHeader = () => {
 
     setData(response.data);
   };
+  console.log(data);
 
   useEffect(() => {
     fetchProducts();

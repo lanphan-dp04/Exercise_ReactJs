@@ -1,16 +1,16 @@
 import "./MustHave.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { dataMustHave } from "../../config/dataApi";
 
 function MustHave() {
   const [categories, setCategories] = useState([]);
   const [isLoad, setIsLoad] = useState(true);
 
-  let url = "https://62d16e83d4eb6c69e7dd4ff6.mockapi.io/mustHave";
   async function fetchData() {
     try {
       setIsLoad(true);
-      let response = await axios.get(url, {});
+      let response = await dataMustHave();
       let temp = await response.data;
       setIsLoad(false);
       setCategories(temp);
@@ -20,7 +20,7 @@ function MustHave() {
   }
 
   useEffect(() => {
-    fetchData(url);
+    fetchData(dataMustHave());
   }, []);
 
   return (

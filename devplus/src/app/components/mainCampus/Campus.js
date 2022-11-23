@@ -1,16 +1,16 @@
 import "./Campus.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { dataCampus } from "../../config/dataApi";
 
 function Campus() {
   const [itemCampus, setItemCampus] = useState([]);
   const [isLoad, setIsLoad] = useState(true);
 
-  let url = "https://62d16e83d4eb6c69e7dd4ff6.mockapi.io/mainCampus";
   async function fetchDataCampus() {
     try {
       setIsLoad(true);
-      let res = await axios.get(url, {});
+      let res = await dataCampus();
       let temp = await res.data;
       setIsLoad(false);
       setItemCampus(temp);
@@ -20,7 +20,7 @@ function Campus() {
   }
 
   useEffect(() => {
-    fetchDataCampus(url);
+    fetchDataCampus(dataCampus());
   }, []);
 
   return (

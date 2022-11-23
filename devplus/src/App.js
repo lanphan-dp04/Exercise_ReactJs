@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./app/stylesheet/style.scss";
-import Header from "./app/components/header/Header";
+
 import Main from "./app/components/main/Main";
 import { useEffect } from "react";
 
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header/>
 
       <MustHave />
       <Campus />

@@ -1,3 +1,4 @@
 import axios from 'axios'
 
 export const dataSildeBar = () => axios.get('https://6361ddfc7521369cd05fab83.mockapi.io/api/slideBar');
+export const dataAdmission = () => axios.get('https://62d16e83d4eb6c69e7dd4ff6.mockapi.io/admission');

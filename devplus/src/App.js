@@ -6,6 +6,7 @@ import "./app/stylesheet/style.scss";
 import Header from "./app/components/header/Header";
 import Main from "./app/components/main/Main";
 import { useEffect } from "react";
+import Footer from "./app/components/footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
     <>
       <Header />
       <Main />
+      <Footer />
     </>
   );
 }

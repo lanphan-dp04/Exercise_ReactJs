@@ -1,13 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { dataAboutDevplus } from "../../config/dataApi";
 
 export default function Aboutdevplus() {
+  // const [list, setList] = useState([]);
+  const [dataApi, setDataApi] = useState([]);
+
+  // useEffect(() => {
+  //   let mounted = true;
+  //   dataAboutDevplus().then((items) => {
+  //     if (mounted) {
+  //       setList(items);
+  //       console.log(list);
+  //     }
+  //   });
+  //   return () => (mounted = false);
+  // }, []);
+
+  const fetchProducts = async () => {
+    const response = await dataAboutDevplus().catch((err) => {
+      console.log("ERROR", err);
+    });
+
+    setDataApi(response.data);
+  };
+  console.log(dataApi);
+  useEffect(() => {
+    fetchProducts();
+  }, []);
   return (
     <div className="aboutdevplus">
       <div className="aboutdevplus-container">
         <div className="aboutdevplus-roadboard">
           <h4 className="aboutdevplus-roadboard-title">ROAD TO BE A DEVPLUS</h4>
           <ol className="aboutdevplus-roadboard-box">
-            <li className="aboutdevplus-roadboard-list">
+            {dataApi.map((item) => {
+              <li className="aboutdevplus-roadboard-list">
+                <div className="aboutdevplus-roadboard-boxcontent">
+                  <span className="">{item.id}</span>
+                  <div className="content">{item.title}</div>
+                </div>
+              </li>;
+            })}
+            {/* <li className="aboutdevplus-roadboard-list">
               <div className="aboutdevplus-roadboard-boxcontent">
                 <span className="">1</span>
                 <div className="content">Apply Devplus</div>
@@ -39,7 +73,7 @@ export default function Aboutdevplus() {
                 <span>5</span>
                 <div className="content">Onboard & start your career</div>
               </div>
-            </li>
+            </li> */}
           </ol>
         </div>
         <div className="aboutdevplus-boxcontent">

@@ -1,0 +1,206 @@
+.aboutdevplus{
+    padding-bottom: 100px;
+}
+
+.aboutdevplus-container{
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.aboutdevplus-boxcontent{
+    order: 1;
+    flex-basis: 64%;
+    background: #e7f4f6;
+    padding: 60px 60px 70px;
+    border-radius: 5px;
+    margin-top: -60px;
+}
+.aboutdevplus-tit{
+    color: #226FB7;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.aboutdevplus-title{
+    font-size: 36px;
+    color: #111111;
+    margin: 0 0 26px;
+    line-height: 1.2;
+
+}
+.aboudevplus-content{
+    font-size: 18px;
+    line-height: 30px;
+    color: #505050;
+}
+.aboutdevplus-roadboard{
+    order: 2;
+    flex-basis: 32%;
+    margin-top: -60px;
+
+}
+.aboutdevplus-roadboard-title{
+    background: #226FB7;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 18px 25px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.aboutdevplus-roadboard-box{
+    padding-inline-start: 0;
+    margin-bottom: 0px;
+}
+.aboutdevplus-roadboard-list{
+    position: relative;
+    background: #e7f4f6;
+    margin-bottom: 12px;
+    border-radius: 3px;
+    padding: 20px;
+    padding-left: 0 !important;
+    overflow: hidden;
+}
+
+.aboutdevplus-roadboard-boxcontent{
+    display: flex;
+    margin-left: 30px;
+}
+.aboutdevplus-roadboard-boxcontent span{
+    padding-right: 30px;
+    font-size: 22px;
+    color: #226FB7;
+    border-right: 1px solid #226FB7;
+}
+.content{
+    padding-left: 25px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1199px){
+    .aboutdevplus-container{
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .aboutdevplus-container{
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        padding: 40px;
+    }
+    .aboutdevplus-tit{
+        color: #226FB7;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+    .aboutdevplus-title{
+        font-size: 30px;
+        color: #111111;
+        margin: 0 0 26px;
+        line-height: 1.2;
+        font-weight: 700;
+    
+    }
+   
+    .aboutdevplus-boxcontent {
+        margin-top:20px;
+        padding: 40px 30px 50px;
+    }
+    .aboudevplus-content{
+        font-size: 18px;
+        line-height: 30px;
+        color: #505050;
+    }
+    .aboutdevplus-roadboard{
+        margin-top: 20px;
+    
+    }
+
+}
+
+
+@media only screen and (max-width: 767px){
+    .aboutdevplus-container{
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        padding: 40px;
+    }
+    .aboutdevplus-tit{
+        color: #226FB7;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+    .aboutdevplus-title{
+        font-size: 24px;    
+        color: #111111;
+        margin: 0 0 26px;
+        line-height: 1.2;
+    
+    }
+  
+    .aboutdevplus-boxcontent {
+        margin-top:20px;
+        padding: 40px 30px 50px;
+    }
+    .aboudevplus-content{
+        font-size: 18px;
+        line-height: 20px;
+        color: #505050;
+    }
+    .aboutdevplus-roadboard{
+        margin-top: 20px;
+    
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    .aboutdevplus-tit{
+        color: #226FB7;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+    .aboutdevplus-title{
+        font-size: 24px;
+        color: #111111;
+        margin: 0 0 26px;
+        line-height: 1.2;
+    
+    }
+    .aboutdevplus-container {
+        padding: 12px;
+    }
+    .aboutdevplus-boxcontent {
+        margin-top:20px;
+        padding: 40px 30px 50px;
+    }
+    .aboudevplus-content{
+        font-size: 18px;
+        line-height: 20px;
+        color: #505050;
+    }
+    .aboutdevplus-roadboard{
+        margin-top: 20px;
+    
+    }
+}

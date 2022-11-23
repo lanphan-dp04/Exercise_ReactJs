@@ -13,13 +13,14 @@ const SildeBarHeader = () => {
   };
   const handleCloseItem = () => {
     setIsShowItem(false);
-  }
+  };
   const handleShowItem = () => {
     isShowItem === true ? setIsShowItem(false) : setIsShowItem(true);
   };
   const handleShowNav = () => {
     isShow === true ? setIsShow(false) : setIsShow(true);
   };
+
   const fetchProducts = async () => {
     const response = await dataSildeBar().catch((err) => {
       console.log("ERROR", err);
@@ -48,11 +49,15 @@ const SildeBarHeader = () => {
             </a>
           </li>
           <li className="nav-link sub-menu">
-          <a className="nav-link--href" href="#">
+            <a className="nav-link--href" href="#">
               OUR PROGRAMME
             </a>
-        
-            <ul className={ `sub-menu-option ${isShowItem === true ? 'sub-menu-option-active' : ''}`}>
+
+            <ul
+              className={`sub-menu-option ${
+                isShowItem === true ? "sub-menu-option-active" : ""
+              }`}
+            >
               <li className=" nav-link-option">
                 <a href="https://stunited.vn/st-software/">One plus campus</a>
               </li>
@@ -64,16 +69,34 @@ const SildeBarHeader = () => {
                   Three plus campus
                 </a>
               </li>
-              <li className="close-btn-option option-toggle--active" onClick={handleCloseItem}>
+              <li
+                className="close-btn-option option-toggle--active"
+                onClick={handleCloseItem}
+              >
                 <i className="fa-solid fa-xmark"></i>&nbsp;Close
               </li>
             </ul>
-            <div className="nav-icon-1 option-toggle--active" onClick={handleShowItem}>
-              <i  className={`fa-solid fa-angle-up icon-plus icon-up ${isShowItem === true ? 'icon-active' : 'icon-close'}`}></i>
-              <i className={`fa-solid fa-angle-down icon-minus icon-down ${isShowItem === false ? 'icon-active' : 'icon-close'}`}></i>
+            <div
+              className="nav-icon-1 option-toggle--active"
+              onClick={handleShowItem}
+            >
+              <i
+                className={`fa-solid fa-angle-up icon-plus icon-up ${
+                  isShowItem === true ? "icon-active" : "icon-close"
+                }`}
+              ></i>
+              <i
+                className={`fa-solid fa-angle-down icon-minus icon-down ${
+                  isShowItem === false ? "icon-active" : "icon-close"
+                }`}
+              ></i>
             </div>
           </li>
-          <li className={`nav-link  ${isShowItem === true ? 'nav-link--none' : ''}`}>
+          <li
+            className={`nav-link  ${
+              isShowItem === true ? "nav-link--none" : ""
+            }`}
+          >
             <a className="nav-link--href" href="#/">
               DEVPLUS ACTIVITIES
             </a>
@@ -134,7 +157,7 @@ const SildeBarHeader = () => {
   return (
     <>
       {renderSlideBar}
-      {(isShow)&&renderNav()}
+      {isShow && renderNav()}
     </>
   );
 };

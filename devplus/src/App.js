@@ -14,6 +14,7 @@ import "./app/stylesheet/style.scss";
 
 import Main from "./app/components/main/Main";
 import { useEffect } from "react";
+import Footer from "./app/components/footer/Footer";
 
 
 function App() {
@@ -25,11 +26,8 @@ function App() {
   return (
     <>
       <Header/>
-
-      <MustHave />
-      <Campus />
-
       <Main />
+      <Footer />
 
     </>
   );

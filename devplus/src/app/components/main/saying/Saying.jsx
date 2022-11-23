@@ -15,7 +15,7 @@ const Saying = () => {
   useEffect(() => {
     fetchData();
   }, []);
-  
+
   const setting = {
     infinite: true,
     slidesToShow: 2,

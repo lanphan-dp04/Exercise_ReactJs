@@ -57,7 +57,7 @@ const Saying = () => {
                   <div className="saying-item-wrapper">
                     <div className="saying-content">
                       <div className="saying-image">
-                        <img src={element.imageQuote} alt="quote" />
+                        <img src='https://devplus.edu.vn/assets/images/testimonial/style5/quote2.png' alt="quote" />
                       </div>
                       <p className="saying-desc text-bold">{element.title}</p>
                     </div>

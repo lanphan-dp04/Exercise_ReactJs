@@ -21,18 +21,17 @@ const SildeBarHeader = () => {
     isShow === true ? setIsShow(false) : setIsShow(true);
   };
 
-  const fetchProducts = async () => {
-    const response = await dataSildeBar().catch((err) => {
-      console.log("ERROR", err);
-    });
+  // const fetchProducts = async () => {
+  //   const response = await dataSildeBar().catch((err) => {
+  //     console.log("ERROR", err);
+  //   });
 
-    setData(response.data);
-  };
-  console.log(data);
+  //   setData(response.data);
+  // };
 
-  useEffect(() => {
-    fetchProducts();
-  }, []);
+  // useEffect(() => {
+  //   fetchProducts();
+  // }, []);
 
   const renderNav = () => {
     return (
@@ -106,7 +105,55 @@ const SildeBarHeader = () => {
     );
   };
 
-  const renderSlideBar = data.map((data) => {
+  // const renderSlideBar = data.map((data) => {
+  //   return (
+  //     <div key={"data"} className="nav-slideBar col-lg-2">
+  //       <a className="nav-expander" onClick={handleShowNav}>
+  //         <i className="fa fa-bars"></i>
+  //       </a>
+  //       <a onClick={ToggleSidebar} className="nav-expander nav-expander-none ">
+  //         <span className="dot1"></span>
+  //         <span className="dot2"></span>
+  //         <span className="dot3"></span>
+  //       </a>
+  //       <div
+  //         className={`slidebar-container ${
+  //           isOpen === true ? "sidebar-active" : ""
+  //         }`}
+  //       >
+  //         <div onClick={ToggleSidebar} className="slidebar-kickoff">
+  //           <div id="line">
+  //             <span className="line1"></span>
+  //             <span className="line2"></span>
+  //           </div>
+  //         </div>
+
+  //         <div className="slidebar-boxlogo">
+  //           <img className="slidebar-logo" src="https://devplus.edu.vn/assets/images/Artboard_2.png" alt="devplus" />
+  //         </div>
+
+  //         <div className="slidebar-boxcontent">
+  //           <p className="slidebar-content">Devplus's mission is filling the gap between school and corporate, reduce in-house training cost and effort for IT companies."</p>
+  //         </div>
+
+  //         <div className="slidebar-imagebox">
+  //           <ImageSlide />
+  //         </div>
+
+  //         <div className="slidebar-map">
+  //           <img src="https://devplus.edu.vn/assets/images/map.png" alt="devplus" className="slidebar-image-map" />
+  //         </div>
+
+  //         <div className="slidebar-facebookicon">
+  //           <a href="https://www.facebook.com/Devplusprogramme" target="_blank">
+  //             <i className="fa-brands fa-facebook"></i>
+  //           </a>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   );
+  // });
+  const renderSlideBar = () => {
     return (
       <div key={"data"} className="nav-slideBar col-lg-2">
         <a className="nav-expander" onClick={handleShowNav}>
@@ -128,23 +175,23 @@ const SildeBarHeader = () => {
               <span className="line2"></span>
             </div>
           </div>
-
+  
           <div className="slidebar-boxlogo">
-            <img className="slidebar-logo" src={data.logo} alt="devplus" />
+            <img className="slidebar-logo" src="https://devplus.edu.vn/assets/images/Artboard_2.png" alt="devplus" />
           </div>
-
+  
           <div className="slidebar-boxcontent">
-            <p className="slidebar-content">{data.description}</p>
+            <p className="slidebar-content">Devplus's mission is filling the gap between school and corporate, reduce in-house training cost and effort for IT companies."</p>
           </div>
-
+  
           <div className="slidebar-imagebox">
-            <ImageSlide {...data} />
+            <ImageSlide />
           </div>
-
+  
           <div className="slidebar-map">
-            <img src={data.map} alt="devplus" className="slidebar-image-map" />
+            <img src="https://devplus.edu.vn/assets/images/map.png" alt="devplus" className="slidebar-image-map" />
           </div>
-
+  
           <div className="slidebar-facebookicon">
             <a href="https://www.facebook.com/Devplusprogramme" target="_blank">
               <i className="fa-brands fa-facebook"></i>
@@ -153,10 +200,11 @@ const SildeBarHeader = () => {
         </div>
       </div>
     );
-  });
+  }
+  
   return (
     <>
-      {renderSlideBar}
+      {renderSlideBar()}
       {isShow && renderNav()}
     </>
   );

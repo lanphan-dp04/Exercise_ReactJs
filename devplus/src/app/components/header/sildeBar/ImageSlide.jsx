@@ -1,10 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { dataSildeBar } from "../../../config/dataApi";
 import ItemModal from "./ItemModal";
 
 const ImageSlide = (props) => {
+  const [data, setData] = useState([]);
   const [id, setId] = useState("");
   const [isShown, setIsShown] = useState(false);
   const [count, setCount] = useState();
+
+  const fetchProducts = async () => {
+    const response = await dataSildeBar().catch((err) => {
+      console.log("ERROR", err);
+    });
+
+    setData(response.data);
+  };
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
 
   const handlClickPrev = () => {
     if (count > 1) {
@@ -25,7 +39,7 @@ const ImageSlide = (props) => {
     setId(id);
     isShown === true ? setIsShown(false) : setIsShown(true);
   };
-  const ArrImage = props.images;
+  const ArrImage = data;
 
   const renderImageSlide = ArrImage.map((element) => {
     return (
@@ -62,7 +76,7 @@ const ImageSlide = (props) => {
                 <i className="fa-solid fa-xmark"></i>
               </button>
               <div className="carousel-inner">
-                <ItemModal  {...props} setId={count} id={id} />
+                <ItemModal  {...data} setId={count} id={id} />
               </div>
               <button
                 className="carousel-control-prev"

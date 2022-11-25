@@ -6,7 +6,7 @@
     line-height: 26px;
     font-weight: 400;
     overflow-x: hidden;
-  }
+}
 
 h2 {
     font-size: 36px;
@@ -48,8 +48,8 @@ h2 {
                 .sec-title {
                     // 
 
-                    h2{
-                        margin-bottom: 0;    
+                    h2 {
+                        margin-bottom: 0;
                     }
                 }
             }
@@ -81,6 +81,7 @@ h2 {
                     }
 
                     .content-part {
+
                         // 
                         .title {
                             font-size: 24px;
@@ -88,6 +89,7 @@ h2 {
 
                         h3 {
                             font-weight: 700;
+                            height: 50px;
                             font-family: 'Nunito', sans-serif;
                             color: #111111;
                             margin: 0 0 26px;
@@ -97,5 +99,17 @@ h2 {
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .rs-popular-courses .container .row-campus .col-4 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .rs-popular-courses .container .row-campus .col-4 {
+        width: 100%;
     }
 }

@@ -32,17 +32,13 @@
                 }
             }
 
-            .col-4 {
-                margin-bottom: 30px;
-                position: relative;
-                padding-right: 15px;
-                padding-left: 15px;
-                flex: 0 0 auto;
-                width: 33.33333333%;
+            .color-categories {
+                padding: 15px 15px;
 
                 
 
                 .categories-item {
+                    height: 150px;
                     border: 1px solid #dfe9eb;
                     background: #ffffff;
                     overflow: hidden;

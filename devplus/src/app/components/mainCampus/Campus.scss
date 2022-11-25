@@ -28,8 +28,8 @@ h2 {
     padding-top: 94px;
 
     .container {
-        padding-left: 15px;
-        padding-right: 15px;
+        // padding-left: 15px;
+        // padding-right: 15px;
         width: 100%;
 
         .row-campus {
@@ -54,13 +54,8 @@ h2 {
                 }
             }
 
-            .col-4 {
-                // margin-bottom: 30px;
-                position: relative;
-                padding-right: 15px;
-                padding-left: 15px;
-                flex: 0 0 auto;
-                width: 33.33333333%;
+             .padding-campus {
+                padding-bottom: 20px;
 
                 .campus-item {
                     padding: 30px;

@@ -33,10 +33,10 @@ function Campus() {
             </div>
           </div>
         </div>
-        <div className="row-campus">
+        <div className="row-campus row">
           {itemCampus.map((item, index) => {
             return (
-              <div className="col-4" key={index}>
+              <div className="col-lg-4 padding-campus col-md-6" key={index}>
                 <div className="campus-item">
                   <div className="img-part">
                     <img src={item?.avatar} alt=""></img>

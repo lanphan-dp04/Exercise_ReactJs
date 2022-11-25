@@ -31,10 +31,10 @@ function MustHave() {
             <h2 className="">What an engineer after Devplus will must have?</h2>
           </div>
         </div>
-        <div className="row-must">
+        <div className="row-must row ">
           {categories.map((item, index) => {
             return (
-              <div className="col-4" key={index}>
+              <div  className="col-lg-4 color-categories col-md-6" key={index}>
                 <div className="categories-item">
                   <div className="icon-item">
                     <img src={item.icon} alt=""></img>

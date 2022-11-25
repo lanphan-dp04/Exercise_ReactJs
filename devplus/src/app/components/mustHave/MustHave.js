@@ -12,6 +12,7 @@ function MustHave() {
       setIsLoad(true);
       let response = await dataMustHave();
       let temp = await response.data;
+      console.log("first", temp);
       setIsLoad(false);
       setCategories(temp);
     } catch (err) {

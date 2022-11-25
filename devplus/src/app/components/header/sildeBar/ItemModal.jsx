@@ -4,8 +4,8 @@ import { useEffect } from "react";
 const ItemModal = (props) => {
   
   const [id ,setId] = useState(props.id);
-
-  let imageListModal = props.images;
+  //console.log(props)
+  let imageListModal = Object.values(props);
   useEffect(() => {
    setId(props.setId);
   });

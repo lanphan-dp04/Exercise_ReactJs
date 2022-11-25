@@ -1,0 +1,96 @@
+.main {
+    font-size: 15px;
+    color: #505050;
+    font-family: 'Rubik', sans-serif;
+    vertical-align: baseline;
+    line-height: 26px;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    color: #111111;
+    line-height: 1.2;
+}
+
+.bg6 {
+    background-image: url(../../assets/bg-campus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.rs-popular-courses {
+    padding-bottom: 70px;
+    padding-top: 94px;
+
+    .container {
+        // padding-left: 15px;
+        // padding-right: 15px;
+        width: 100%;
+
+        .row-campus {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 50px;
+            margin-right: -15px;
+            margin-left: -15px;
+
+            .col-12 {
+                position: relative;
+                padding-right: 15px;
+                padding-left: 15px;
+
+                .sec-title {
+                    // 
+
+                    h2{
+                        margin-bottom: 0;    
+                    }
+                }
+            }
+
+             .padding-campus {
+                padding-bottom: 20px;
+
+                .campus-item {
+                    padding: 30px;
+                    border: 1px solid #dfe9eb;
+                    border-radius: 5px;
+                    transition: all 0.3s ease;
+
+                    .img-part {
+                        margin-bottom: 30px;
+
+                        img {
+                            width: 100%;
+                            border-radius: 5px;
+                            transition: all 0.3s ease;
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .content-part {
+                        // 
+                        .title {
+                            font-size: 24px;
+                        }
+
+                        h3 {
+                            font-weight: 700;
+                            font-family: 'Nunito', sans-serif;
+                            color: #111111;
+                            margin: 0 0 26px;
+                            line-height: 1.2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.rs-categories {
+    padding-bottom: 70px;
+    padding-top: 94px;
+    background: #f3f8f9;
+
+    .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .row-must {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-left: -15px;
+            margin-right: -15px;
+
+            .sec-title {
+            //  write
+                h2{
+                    font-family: 'Nunito', sans-serif;
+                    color: #111111;
+                    margin-bottom: 50px;
+                    line-height: 1.2;
+                    font-size: 36px;
+                    font-weight: 700;
+                    padding-left: 15px;
+                    width: 100%;
+                    padding-right: 15px;
+                }
+            }
+
+            .color-categories {
+                padding: 15px 15px;
+
+                
+
+                .categories-item {
+                    height: 150px;
+                    border: 1px solid #dfe9eb;
+                    background: #ffffff;
+                    overflow: hidden;
+                    padding: 30px;
+                    display: block;
+                    color: #505050;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background-color: #226FB7;
+                        color: #ffffff;
+                        border-color: #226FB7;
+                        
+                        .content-part .title {
+                            color: #ffffff
+                        }
+                        .icon-item {
+                            background: #ffffff;
+
+                            img {
+                                scale: 0.9;
+                            }
+                        }
+                    }
+
+                    .icon-item {
+                        float: left;
+                        margin-right: 25px;
+                        width: 70px;
+                        height: 70px;
+                        line-height: 70px;
+                        border-radius: 100%;
+                        background: rgba(22, 170, 202, 0.2);
+                        text-align: center;
+                        transition: all 0.3s ease;
+
+                        img {
+                            display: inline-block;
+                        }
+                    }
+
+                    .content-part {
+                        // color: #111111;
+
+                        .title {
+                            color: #111111;
+                            margin-bottom: 5px;
+                            font-size: 22px;
+                            transition: all 0.3s ease;
+                        }
+
+                        h4 {
+                            font-weight: 700;
+                            margin: 0 0 26px;
+                            line-height: 1.2;
+                        }
+
+                        .course {
+                            font-family: 'Rubik', sans-serif;
+                            font-size: 15px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

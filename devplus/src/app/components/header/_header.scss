@@ -1,0 +1,123 @@
+header {
+  background-color: #ffffff;
+  .header-wrapper {
+    padding: 40px 0;
+    .nav-list {
+      margin-bottom: unset;
+      padding-left: unset;
+      @include flex-evenly-center;
+      .nav-item {
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        line-height: 35px;
+        font-size: 15px;
+      }
+      .menu-bar {
+        display: none;
+      }
+      .menu-bar {
+        background-color: #ffffff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        padding: 20px 0 20px 40px;
+        position: absolute;
+        top: 75px;
+        font-size: 15px;
+        font-weight: 400;
+        width: 300px;
+        .menu-item {
+          padding-bottom: 5px;
+        }
+      }
+      .pointer-default {
+        position: relative;
+        .nav-link::before {
+          content: "+";
+          position: absolute;
+          display: block;
+          left: auto;
+          right: -15px;
+          font-size: 17px;
+          top: 45%;
+          text-align: center;
+          cursor: pointer;
+          transform: translateY(-50%);
+          transition: all 0.5s ease;
+        }
+        .nav-link:hover::before {
+          content: "-";
+          font-size: 17px;
+          transition: all 0.5s ease;
+        }
+      }
+      .pointer-default:hover::after {
+        content: "";
+        height: 75px;
+        width: 100%;
+        position: absolute;
+      }
+      .pointer-default:hover {
+        .menu-bar {
+          display: block;
+        }
+      }
+    }
+    .nav-slideBar {
+      position: relative;
+      .nav-expander {
+        color: #111;
+        position: absolute;
+        padding-top: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+        right: 0;
+        .dot1 {
+          margin-top: 0;
+        }
+        span {
+          background-color: #111;
+          height: 2px;
+          width: 30px;
+          display: block;
+          margin: 6px 0;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+    .nav-expander i {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    .header-wrapper {
+      padding: 30px 0;
+      .logo {
+        width: 220px;
+      }
+      nav {
+        display: none;
+      }
+      a.nav-expander {
+        padding: 30px;
+      }
+      .nav-expander i {
+        padding-top: unset;
+        font-size: 25px;
+        display: block;
+      }
+      .nav-expander-none {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+}
